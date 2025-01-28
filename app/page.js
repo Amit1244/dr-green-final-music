@@ -182,6 +182,22 @@ export default async function Home() {
 
     await fetchCountry();
 
+
+    let locationData1;
+    const fetchCountry1 = async () => {
+        try {
+            const response = await fetch(`${process.env.FIND_IP}`);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            locationData1 = await response.json();
+        } catch (error) {
+            console.error('Fetch error:', error);
+        }
+    };
+
+    await fetchCountry1()
+
     return (
         <main>
             {/*hero  */}
@@ -209,6 +225,9 @@ export default async function Home() {
                                 <br />
                                 <span className="text-black text-[60px] sm:text-[80px] md:text-[90px] lg:text-[120px] 2xl:text-[180px] bg-white px-10 tracking-wide uppercase">
                                     Goldilocks
+                                </span>
+                                <span className="text-black text-[60px] sm:text-[80px] md:text-[90px] lg:text-[120px] 2xl:text-[180px] bg-white px-10 tracking-wide uppercase">
+                                    {locationData1?.ip}
                                 </span>
                                 <br />
 
