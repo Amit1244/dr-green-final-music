@@ -170,7 +170,7 @@ export default async function Home() {
     let locationData;
     const fetchCountry = async () => {
         try {
-            const response = await fetch(`${process.env.LOCATION}`);
+            const response = await fetch(`https://ipapi.co/json/`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -182,7 +182,6 @@ export default async function Home() {
 
     await fetchCountry();
 
-    console.log('locationData :>> ', locationData, process.env.COUNTRY, locationData?.country, locationData?.country !== process.env.COUNTRY);
     return (
         <main>
             {/*hero  */}
@@ -281,7 +280,7 @@ export default async function Home() {
                 (locationData?.country_name !== process.env.COUNTRY) && (
                     <>
                         <div className="relative">
-                            <video
+                            {/* <video
                                 className="absolute top-1/2 -translate-y-1/2 -left-64 -rotate-12 -z-40 mix-blend-screen "
                                 muted
                                 loop
@@ -294,7 +293,7 @@ export default async function Home() {
                                     type="video/mp4"
                                 />
                                 Your browser does not support the video tag.
-                            </video>
+                            </video> */}
                             <section className="container mx-auto lg:w-[80%] px-4">
                                 <div className="text-start uppercase text-[125px] leading-none">
                                     <h2 className="leading-none">SHOP</h2>
@@ -334,7 +333,7 @@ export default async function Home() {
             {/*benefits */}
 
             <section className="mt-10 lg:mt-40 py-10 sm:py-16 relative  overflow-x-hidden">
-                <div className="absolute top-0 -right-72 -rotate-12 -z-10 mix-blend-screen ">
+                {/* <div className="absolute top-0 -right-72 -rotate-12 -z-10 mix-blend-screen ">
                     <video
                         className="h-full w-full"
                         muted
@@ -349,7 +348,7 @@ export default async function Home() {
                         />
                         Your browser does not support the video tag.
                     </video>
-                </div>
+                </div> */}
 
 
                 {/* <div className="absolute top-0 left-0 w-full h-full z-[-10] pointer-events-none mask-top-bottom mix-blend-screen">
