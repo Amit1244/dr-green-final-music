@@ -24,3 +24,8 @@ export async function POST(request, res) {
         status: results.statusCode,
     });
 }
+
+export async function COUNTRY() {
+    const data = await fetch(`https://ipapi.co/json/`);
+    return data.json();
+}
