@@ -182,6 +182,7 @@ export default async function Home() {
 
     await fetchCountry();
 
+    console.log('locationData :>> ', locationData, process.env.COUNTRY, locationData?.country, locationData?.country !== process.env.COUNTRY);
     return (
         <main>
             {/*hero  */}
