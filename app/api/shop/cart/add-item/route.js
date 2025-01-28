@@ -25,7 +25,3 @@ export async function POST(request, res) {
     });
 }
 
-export async function COUNTRY() {
-    const data = await fetch(`https://ipapi.co/json/`);
-    return data.json();
-}
