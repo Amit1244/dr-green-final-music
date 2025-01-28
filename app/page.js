@@ -182,6 +182,7 @@ export default async function Home() {
 
     await fetchCountry();
 
+    // console.log('locationData :>> ', locationData, process.env.COUNTRY, locationData?.country, locationData?.country !== process.env.COUNTRY);
     return (
         <main>
             {/*hero  */}
@@ -245,7 +246,7 @@ export default async function Home() {
                     </div>
                 </div>
                 {/* Logo */}
-                {/* <div className="mt-0 lg:mt-[-40%] 2xl:mt-[-40%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
+                <div className="mt-0 lg:mt-[-40%] 2xl:mt-[-40%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -263,7 +264,7 @@ export default async function Home() {
                         // priority
                         className="object-contain  object-right-bottom ml-[25%]"
                     />
-                </div> */}
+                </div>
                 {/* <Image
                     className="absolute left-0 top-[90%] hidden sm:block top-[70%] 2xl:top-[50%] max-w-[40%] max-h-full object-left object-fit w-auto h-auto object-left z-[-10] pointer-events-none"
                     src="/images/general/left-rock.webp"
@@ -277,10 +278,10 @@ export default async function Home() {
 
             {
                 // availableLocations && locationData && availableLocations?.[0].toLowerCase().replace(/\s+/g, "") !== locationData?.country?.toLowerCase().replace(/\s+/g, "") && (
-                (locationData?.country_name !== process.env.COUNTRY) && (
+                (locationData?.country_name !== "United Kingdom") && (
                     <>
                         <div className="relative">
-                            {/* <video
+                            <video
                                 className="absolute top-1/2 -translate-y-1/2 -left-64 -rotate-12 -z-40 mix-blend-screen "
                                 muted
                                 loop
@@ -293,7 +294,7 @@ export default async function Home() {
                                     type="video/mp4"
                                 />
                                 Your browser does not support the video tag.
-                            </video> */}
+                            </video>
                             <section className="container mx-auto lg:w-[80%] px-4">
                                 <div className="text-start uppercase text-[125px] leading-none">
                                     <h2 className="leading-none">SHOP</h2>
@@ -333,7 +334,7 @@ export default async function Home() {
             {/*benefits */}
 
             <section className="mt-10 lg:mt-40 py-10 sm:py-16 relative  overflow-x-hidden">
-                {/* <div className="absolute top-0 -right-72 -rotate-12 -z-10 mix-blend-screen ">
+                <div className="absolute top-0 -right-72 -rotate-12 -z-10 mix-blend-screen ">
                     <video
                         className="h-full w-full"
                         muted
@@ -348,7 +349,7 @@ export default async function Home() {
                         />
                         Your browser does not support the video tag.
                     </video>
-                </div> */}
+                </div>
 
 
                 {/* <div className="absolute top-0 left-0 w-full h-full z-[-10] pointer-events-none mask-top-bottom mix-blend-screen">

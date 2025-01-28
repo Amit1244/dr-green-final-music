@@ -4,7 +4,7 @@
 
 
 
-/* @font-face {
+@font-face {
     font-family: 'Brodien';
     src: url('/fonts/Brodien-SemiBold.otf') format('opentype');
     font-weight: normal;
@@ -16,7 +16,7 @@
     src: url('/fonts/TheOvercook.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-} */
+}
 
 
 /* Apply custom font to body */
