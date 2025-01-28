@@ -245,7 +245,8 @@ export default async function Home() {
                         </p>
                     </div>
                 </div>
-                <div className="mt-0 lg:mt-[-40%] 2xl:mt-[-40%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
+                {/* Logo */}
+                {/* <div className="mt-0 lg:mt-[-40%] 2xl:mt-[-40%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -263,7 +264,7 @@ export default async function Home() {
                         // priority
                         className="object-contain  object-right-bottom ml-[25%]"
                     />
-                </div>
+                </div> */}
                 {/* <Image
                     className="absolute left-0 top-[90%] hidden sm:block top-[70%] 2xl:top-[50%] max-w-[40%] max-h-full object-left object-fit w-auto h-auto object-left z-[-10] pointer-events-none"
                     src="/images/general/left-rock.webp"
