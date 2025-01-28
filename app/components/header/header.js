@@ -107,8 +107,6 @@ export default async function Header() {
             >
                 Your browser does not support the video tag.
             </video>
-
-
         </>
     );
 }
