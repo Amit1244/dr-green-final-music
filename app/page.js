@@ -170,7 +170,7 @@ export default async function Home() {
     let locationData;
     const fetchCountry = async () => {
         try {
-            const response = await fetch(`https://ipapi.co/json/`);
+            const response = await fetch(`${process.env.LOCATION}`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -278,7 +278,7 @@ export default async function Home() {
 
             {
                 // availableLocations && locationData && availableLocations?.[0].toLowerCase().replace(/\s+/g, "") !== locationData?.country?.toLowerCase().replace(/\s+/g, "") && (
-                (locationData?.country_name !== "United Kingdom") && (
+                (locationData?.country_name !== process.env.COUNTRY) && (
                     <>
                         <div className="relative">
                             <video
