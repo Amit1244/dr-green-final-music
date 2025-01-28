@@ -206,10 +206,7 @@ export default async function Home() {
                                 >
                                     Goldilocks
                                 </span>
-                                <h1 className="text-end text-xl md:text-[43px]">{locationData?.country_name}</h1>
-
                                 <br />
-
                                 <span className="text-black text-[60px] sm:text-[80px] md:text-[90px] lg:text-[120px] 2xl:text-[180px] bg-white px-10 tracking-wide uppercase">
                                     Goldilocks
                                 </span>
