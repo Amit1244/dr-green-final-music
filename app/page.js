@@ -193,6 +193,7 @@ export default async function Home() {
                         <div className="relative w-11 h-6 bg-black rounded-full peer peer-focus:ring-4 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-black after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-white"></div>
                     </label>
                     <h1 className="text-end text-xl md:text-[43px]">FROM FREDO</h1>
+                    <h1 className="text-end text-xl md:text-[43px]">{locationData}O</h1>
                 </div>
                 <div className="container mx-auto px-4">
                     <div className="text-center relative">
