@@ -276,7 +276,7 @@ export default async function Home() {
 
             {
                 // availableLocations && locationData && availableLocations?.[0].toLowerCase().replace(/\s+/g, "") !== locationData?.country?.toLowerCase().replace(/\s+/g, "") && (
-                (locationData?.country !== process.env.COUNTRY) && (
+                (locationData?.country_name !== process.env.COUNTRY) && (
                     <>
                         <div className="relative">
                             <video
