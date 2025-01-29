@@ -181,7 +181,6 @@ export default async function Home() {
     };
 
     await fetchCountry();
-
     return (
         <main>
             {/*hero  */}
@@ -211,7 +210,7 @@ export default async function Home() {
                                     Goldilocks
                                 </span>
                                 <br />
-
+                                <h6>{locationData?.country_name}</h6>
                                 <span
                                     className="text-transparent tracking-wide uppercase bg-clip-text font-light "
                                     style={{
