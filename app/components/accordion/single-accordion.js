@@ -57,7 +57,7 @@ export default function SingleAccordion(props) {
             </button>
             <div className="accordion-container w-full h-[0px] overflow-hidden duration-500 ease-in-out">
                 <div className="accordion-text pb-6 px-6 sm:px-12 rounded-[40px]">
-                    <p className="font-light">{props.answer}</p>
+                    <p className="font-light font-sans">{props.answer}</p>
                 </div>
             </div>
         </div>

@@ -563,10 +563,10 @@ export default async function Home() {
                 <div className="container mx-auto px-4">
                     <div>
                         <div className="text-center mb-20">
-                            <h2 className="text-5xl sm:text-[74px] font-semibold">
+                            <h2 className="text-5xl sm:text-[125px] uppercase  font-bold">
                                 Questions?
                             </h2>
-                            <p className="text-[#a2a2a2] text-2xl sm:text-3xl font-semibold font-overkook">
+                            <p className="text-[#a2a2a2] text-2xl sm:text-[46px] font-thin font-overkook">
                                 We&apos;ve got answers...
                             </p>
                         </div>
