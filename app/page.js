@@ -181,6 +181,7 @@ export default async function Home() {
     };
 
     await fetchCountry();
+
     return (
         <main>
             {/*hero  */}
@@ -200,7 +201,7 @@ export default async function Home() {
                                 <span
                                     className="text-transparent tracking-wide uppercase bg-clip-text font-light "
                                     style={{
-                                        WebkitTextStroke: "0.8px white",
+                                        WebkitTextStroke: "2px gray",
                                     }}
                                 >
                                     Goldilocks
@@ -210,17 +211,17 @@ export default async function Home() {
                                     Goldilocks
                                 </span>
                                 <br />
-                                <h6>{locationData?.country_name}</h6>
+
                                 <span
                                     className="text-transparent tracking-wide uppercase bg-clip-text font-light "
                                     style={{
-                                        WebkitTextStroke: "0.8px white",
+                                        WebkitTextStroke: "2px gray",
                                     }}
                                 >
                                     Goldilocks
                                 </span>
                             </h1>
-                            <div className="absolute uppercase font-overkook text-white text-xl md:text-3xl 2xl:text-7xl top-4 md:top-[15%] 2xl:top-[20%] left-3 md:left-4 -rotate-6">
+                            <div className="absolute uppercase font-overkook z-10 text-white text-xl md:text-3xl 2xl:text-7xl top-4 md:top-[15%] 2xl:top-[20%] left-3 md:left-4 -rotate-6">
                                 Welcome to
                             </div>
                         </div>
@@ -277,7 +278,7 @@ export default async function Home() {
                     <>
                         <div className="relative">
                             <video
-                                className="absolute top-1/2 -translate-y-1/2 -left-64 -rotate-12 -z-40 mix-blend-screen "
+                                className="absolute top-1/2 -translate-y-1/2 -left-64 opacity-30 -rotate-12 -z-40 mix-blend-screen "
                                 muted
                                 loop
                                 playsInline
@@ -329,7 +330,7 @@ export default async function Home() {
             {/*benefits */}
 
             <section className="mt-10 lg:mt-40 py-10 sm:py-16 relative  overflow-x-hidden">
-                <div className="absolute top-0 -right-72 -rotate-12 -z-10 mix-blend-screen ">
+                <div className="absolute top-0 -right-72 -rotate-12 -z-10 opacity-30 mix-blend-screen ">
                     <video
                         className="h-full w-full"
                         muted
@@ -413,7 +414,7 @@ export default async function Home() {
                             <p className="text-3xl font-semibold">
                                 {strain.data.name}
                             </p>
-                            <hr className="h-[2px] border-none bg-[#0aba90] my-10" />
+                            <hr className="h-[2px] border-none bg-[#0aba90] my-4" />
                             <p className="text-xl mb-4">
                                 <span className="font-bold">FEELINGS: </span>
                                 {strain.data.feelings}

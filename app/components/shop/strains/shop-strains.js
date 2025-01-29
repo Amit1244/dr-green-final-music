@@ -16,26 +16,26 @@ export default async function ShopStrains() {
     };
     const params = new URLSearchParams(body).toString();
 
-    const getStrains = await fetch(
-        `https://stage-api.drgreennft.com/api/v1/dapp/strains?${params}`,
-        {
-            method: "GET",
-            redirect: "follow",
-            headers: {
-                "x-auth-apikey": process.env.DAPP_API,
-                "x-auth-signature": GenerateSignature(body),
-                "Content-Type": "application/json",
-            },
-            cache: "force-cache",
-        }
-    );
+    // const getStrains = await fetch(
+    //     `https://stage-api.drgreennft.com/api/v1/dapp/strains?${params}`,
+    //     {
+    //         method: "GET",
+    //         redirect: "follow",
+    //         headers: {
+    //             "x-auth-apikey": process.env.DAPP_API,
+    //             "x-auth-signature": GenerateSignature(body),
+    //             "Content-Type": "application/json",
+    //         },
+    //         cache: "force-cache",
+    //     }
+    // );
 
-    const strains = await getStrains.json();
+    // const strains = await getStrains.json();
 
     return (
         <ShopStrainsClient
-            strains={strains.data.strains}
-            totalStrains={strains.data.pageMetaDto.itemCount}
+            // strains={strains.data.strains}
+            // totalStrains={strains.data.pageMetaDto.itemCount}
             countryCode={countryCode}
             takeStrains={"6"}
         />
