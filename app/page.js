@@ -9,7 +9,6 @@ import EligibleConditionsCarousel from "./components/carousels/eligible-conditio
 import NewsCarousel from "./components/carousels/news-carousel";
 import ShopStrains from "./components/shop/strains/shop-strains";
 import InteractiveCheckbox from "./components/smallComponent/input";
-import IPAddress from "./components/IPAddress";
 
 export async function generateMetadata() {
     const query = `
@@ -39,7 +38,7 @@ export async function generateMetadata() {
 
 export default async function Home() {
 
-    const query = `
+    const query = ` 
 {
     pageBy(pageId: ${process.env.PAGE_ID}) {
         title
@@ -185,9 +184,6 @@ export default async function Home() {
 
     return (
         <main>
-            <h1>Welcome to My Site</h1>
-            <IPAddress />
-            {/*hero  */}
             <section id="hero" className="pt-4 sm:pt-10 bg-center relative">
                 <div className="flex items-center justify-between container mx-auto px-4 2xl:max-w-[calc(100%_-_5rem)]">
                     <label className="inline-flex items-center me-5 gap-3 cursor-pointer">
