@@ -5,25 +5,18 @@ import { useEffect, useState } from "react";
 export default function IPAddress() {
     const [ip, setIP] = useState("");
 
-
     useEffect(() => {
         fetch("/api/ip")
             .then((res) => {
-                console.log("Raw response status:", res.status); // ✅ Debug response status
-                return res.json(); // ✅ Convert response to JSON
+                console.log("Raw response:", res.json()); // Debugging response
+                return res.json(); // ✅ Return JSON to the next .then()
             })
             .then((data) => {
-                console.log("Parsed Data:", data); // ✅ Check if data is valid
-                if (data && data.ip) {
-                    setIP(data.ip);
-                } else {
-                    console.error("No IP found in response:", data);
-                }
+                console.log("Parsed Data:", data); // Debugging data
+                setIP(data.ip);
             })
             .catch((err) => console.error("Error fetching IP:", err));
     }, []);
 
-    return <div>Your IP Address: {ip || "Fetching..."}</div>;
-
-
+    return <div>Your IP Address: {ip}</div>;
 }
